@@ -67,7 +67,7 @@ async function ListProducts({ params }) {
 
     const productsByProductName = await getProductsByProductName()
 
-    if(String(params.userId) === '1'){
+    if(params.userId === '1'){
         return(
             <tbody className='text-lg'>
                     {                        
