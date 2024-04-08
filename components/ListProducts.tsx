@@ -67,7 +67,7 @@ async function ListProducts({ params: userId }: any) {
 
     const productsByProductName = await getProductsByProductName()
 
-    if(userId == '1'){
+    if(String(userId) == '1'){
         return(
             <tbody className='text-lg'>
                     {                        
@@ -93,7 +93,7 @@ async function ListProducts({ params: userId }: any) {
         )
     }
     
-    if(userId == '2')
+    if(String(userId) == '2')
     {
         return(
             <tbody className='text-lg'>
