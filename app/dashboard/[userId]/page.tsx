@@ -5,6 +5,7 @@ import { PrismaClient } from '@prisma/client'
 import {SortProdouct} from '../../../components/SortProdouct'
 import ListProducts from '../../../components/ListProducts'
 
+
 const prisma  = new PrismaClient()
 
 const getProduct = async (params: Number) => 
