@@ -1,11 +1,9 @@
 
 import React from 'react'
-import AddProduct from '@/components/AddProduct'
-import DeleteProducts from '@/components/DeleteProduct'
+import AddProduct from '../../../components/AddProduct'
 import { PrismaClient } from '@prisma/client'
-import EditProduct from '@/components/EditProduct'
-import { SortProdouct } from '@/components/SortProdouct'
-import ListProducts from '@/components/ListProducts'
+import {SortProdouct} from '../../../components/SortProdouct'
+import ListProducts from '../../../components/ListProducts'
 
 const prisma  = new PrismaClient()
 

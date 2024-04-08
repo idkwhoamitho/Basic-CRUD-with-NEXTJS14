@@ -58,7 +58,7 @@ const getProducts = async (params: Number) =>
 
 
 
-async function ListProducts({ params }: {params: String}) {
+async function ListProducts({ params }) {
     let [products, tags] = await Promise.all([
         getProducts(Number(params)),
         getTags(),
@@ -67,7 +67,7 @@ async function ListProducts({ params }: {params: String}) {
 
     const productsByProductName = await getProductsByProductName()
 
-    if(params.userId === '1'){
+    if(String(params.userId) === '1'){
         return(
             <tbody className='text-lg'>
                     {                        
