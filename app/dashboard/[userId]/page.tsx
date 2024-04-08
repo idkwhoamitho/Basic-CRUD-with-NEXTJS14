@@ -4,7 +4,6 @@ import AddProduct from '../../../components/AddProduct'
 import { PrismaClient } from '@prisma/client'
 import {SortProdouct} from '../../../components/SortProdouct'
 import ListProducts from '../../../components/ListProducts'
-import { Params } from 'next/dist/shared/lib/router/utils/route-matcher'
 
 const prisma  = new PrismaClient()
 
