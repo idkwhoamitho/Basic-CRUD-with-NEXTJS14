@@ -71,7 +71,7 @@ const getTags = async () =>
 
 
 
-export default async function Dashboard({ params  }: {params: any}) {  
+export default async function Dashboard({ params  }: {params: {userId:String}}) {  
     let [products, tags] = await Promise.all([
         getProduct(Number(params)),
         getTags(),
