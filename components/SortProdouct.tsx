@@ -17,8 +17,7 @@ export const SortProdouct = () => {
        <form onSubmit={onSelect}>
             <select className='select select-bordered mr-2' 
             value={sortType}
-            onChange={(e) => {setSortType(e.target.value)}}
-            defaultValue={sortType}>
+            onChange={(e) => {setSortType(e.target.value)}}>
                 <option value='' disabled>Sort By</option>
                 <option value={'1'} key={'1'}>All</option>
                 <option value={'2'} key={'2'}>A-Z</option>

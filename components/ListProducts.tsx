@@ -63,11 +63,11 @@ async function ListProducts({ params: userId }: any) {
         getProducts(Number(userId)),
         getTags(),
     ])
-
+    console.log(userId)
 
     const productsByProductName = await getProductsByProductName()
 
-    if(String(userId) == '1'){
+    if(String(userId.userId) == "1"){
         return(
             <tbody className='text-lg'>
                     {                        
@@ -93,7 +93,7 @@ async function ListProducts({ params: userId }: any) {
         )
     }
     
-    if(String(userId) == '2')
+    if(String(userId.userId) == "2")
     {
         return(
             <tbody className='text-lg'>
@@ -128,14 +128,7 @@ async function ListProducts({ params: userId }: any) {
         )
     }
 
-    // return(
-    //     <h1>
-    //         SOMETHING WENT WRONG WHILE FETCHING DATA
-    //     </h1>
-    // )
-//     return (
-//     <div>ListProducts</div>
-//   )
+    
 }
 
 export default ListProducts

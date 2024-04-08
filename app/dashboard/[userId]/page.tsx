@@ -76,7 +76,6 @@ export default async function Dashboard({ params  }: {params: {userId:String}}) 
         getProduct(Number(params)),
         getTags(),
     ])
-    console.log(params)
     
     return (
        <div className=''>
