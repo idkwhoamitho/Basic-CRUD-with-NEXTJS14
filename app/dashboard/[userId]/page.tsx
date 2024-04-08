@@ -9,7 +9,6 @@ import ListProducts from '@/components/ListProducts'
 
 const prisma  = new PrismaClient()
 
-export let stateSort = '1'
 const getProduct = async (params: Number) => 
 {
     let res;
