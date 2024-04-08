@@ -58,7 +58,7 @@ const getProducts = async (params: Number) =>
 
 
 
-async function ListProducts({ params }) {
+async function ListProducts({ params } : {params: any}) {
     let [products, tags] = await Promise.all([
         getProducts(Number(params)),
         getTags(),
