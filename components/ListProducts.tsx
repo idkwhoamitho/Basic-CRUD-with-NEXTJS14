@@ -58,18 +58,16 @@ const getProducts = async (params: Number) =>
 
 
 
-async function ListProducts({ params }: { params: any }) {
-    const typedParams = params as any;
-    
+async function ListProducts({ params: userId }: any) {
     let [products, tags] = await Promise.all([
-        getProducts(Number(typedParams)),
+        getProducts(Number(userId)),
         getTags(),
     ])
 
 
     const productsByProductName = await getProductsByProductName()
 
-    if(typedParams.userId == '1'){
+    if(String(userId) == '1'){
         return(
             <tbody className='text-lg'>
                     {                        
@@ -95,7 +93,7 @@ async function ListProducts({ params }: { params: any }) {
         )
     }
     
-    if(typedParams.userId == '2')
+    if(String(userId) == '2')
     {
         return(
             <tbody className='text-lg'>

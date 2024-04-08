@@ -78,7 +78,6 @@ export default async function Dashboard({ params  }: {params: {userId:String}}) 
     ])
     console.log(params)
     
-    
     return (
        <div className=''>
             <div className='mb-2 container container-md'>
